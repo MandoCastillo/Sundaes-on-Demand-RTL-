@@ -3,18 +3,24 @@ import { useEffect, useState } from 'react';
 import ScoopOption from './scoop-option';
 import { Row } from 'react-bootstrap';
 import ToppingOption from './topping-option';
+import AlertBanner from '../common/alert-banner';
 
 export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     axios
       .get(`http://localhost:3030/${optionType}`)
       .then(response => setItems(response.data))
       .catch(error => {
-        // TODO: handle error response
+        setError(true);
       });
   }, [optionType]);
+
+  if (error) {
+    return <AlertBanner message="An unexpected error occurred. Please try again later." />;
+  }
 
   const ItemComponent = optionType === 'scoops' ? ScoopOption : ToppingOption;
 
