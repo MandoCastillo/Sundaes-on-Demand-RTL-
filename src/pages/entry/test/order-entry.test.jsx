@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../../test-utils/testing-library.utils';
 import OrderEntry from '../order-entry';
 import { rest } from 'msw';
 import { server } from '../../../mocks/server';
@@ -14,6 +14,8 @@ test('handles error for scoops and toppings routes', async () => {
   );
 
   render(<OrderEntry />);
-  const alerts = await screen.findAllByRole('alert');
+  const alerts = await screen.findAllByText(
+    /An unexpected error occurred. Please try again later./,
+  );
   expect(alerts).toHaveLength(2);
 });
