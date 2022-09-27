@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="be8b733a-690b-4680-b4cf-24eb9dbad01c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/order-details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/order-details.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/entry/options.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/options.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/entry/scoop-option.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/scoop-option.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/entry/test/option.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/test/option.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/entry/test/order-entry.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/test/order-entry.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/entry/topping-option.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/topping-option.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/entry/order-entry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/order-entry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/entry/test/total-updates.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entry/test/total-updates.test.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.Term and conditions">
+  <component name="RunManager" selected="Jest.update toppings subtotal when topping change">
     <configuration name="Term and conditions" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -111,8 +109,22 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="update toppings subtotal when topping change" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/entry/test/total-updates.test.tsx" />
+      <test-names>
+        <test-name value="update toppings subtotal when topping change" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.update toppings subtotal when topping change" />
         <item itemvalue="Jest.Term and conditions" />
         <item itemvalue="Jest.Term and conditions.Checkbox is unchecked by default" />
         <item itemvalue="Jest.renders learn react link" />
@@ -122,5 +134,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
